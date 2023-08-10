@@ -12,6 +12,8 @@
 (require 'use-package)
 (require 'cc-mode)
 
+(message "logging first")
+
 ;; (when (not package-archive-contents)
 ;;  (package-refresh-contents))
 
@@ -37,7 +39,7 @@
 (setq inhibit-startup-message t) ;; hide the startup message
 (setq mode-require-final-newline nil) ;; remove final line limit
 (load-theme 'monokai t) ;; load material theme
-(global-linum-mode t) ;; enable line numbers globally
+(global-display-line-numbers-mode) ;; enable line numbers globally
 (delete-selection-mode t) ;; open selection mode open
 
 ;; enable prompt
